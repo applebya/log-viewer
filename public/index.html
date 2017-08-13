@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <script src="https://use.fontawesome.com/f0164bc2c9.js"></script>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Log Viewer</title>
+
+    <!-- Injected LOG_DATA -->
+    <script>
+      LOG_DATA = {
+        "success": true,
+        "logs": [
+          { "datetime": "2013-10-15T19:15:05", "type": "ERROR", "name": "Death", "message": "Nicole has died of dysentry", "source": "com.devcpu.oregontrail.uhoh" },
+          { "datetime": "2013-10-15T19:14:05", "type": "WARN", "name": "Injury", "message": "Mary has a broken arm", "source": "com.devcpu.oregontrail.whoops" },
+          { "datetime": "2013-10-15T19:12:05", "type": "INFO", "name": "Birth", "message": "Janet gave birth to twins", "source": "com.devcpu.oregontrail.uhoh" },
+          { "datetime": "2013-10-15T19:11:05", "type": "WARN", "name": "Broke down", "message": "Your wagon has broken a wheel", "source": "com.devcpu.oregontrail.wheeeeeel" },
+          { "datetime": "2013-10-15T12:10:05", "type": "ERROR", "name": "Death", "message": "6 of your oxen have perished overnight!", "source": "com.devcpu.oregantrail.oxentoxin" },
+          { "datetime": "2013-10-15T10:09:05", "type": "INFO", "name": "Crossing", "message": "You are faced with crossing a large river.", "source": "com.devcpu.oregantrail.gumboots.betterHavePacked" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "Traveller", "message": "Judas has joined your group", "source": "com.devcpu.oregantrail.start" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "Traveller", "message": "Jesus has joined your group", "source": "com.devcpu.oregantrail.start" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "Traveller", "message": "Sarah has joined your group", "source": "com.devcpu.oregantrail.start" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "Traveller", "message": "Nicole has joined your group", "source": "com.devcpu.oregantrail.start" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack 5 chickens", "source": "com.devcpu.oregantrail.packinTime" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack a knife", "source": "com.devcpu.oregantrail.packinTime" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack an axe", "source": "com.devcpu.oregantrail.packinTime" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack 20 cast iron pans", "source": "com.devcpu.oregantrail.packinTime" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack bullets", "source": "com.devcpu.oregantrail.poorBuffalo" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack a rifle", "source": "com.devcpu.oregantrail.poorBuffalo" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "PackedItem", "message": "You have decided to pack 10 oxen", "source": "com.devcpu.oregantrail.packinTime" },
+          { "datetime": "2013-10-15T09:05:05", "type": "INFO", "name": "Start", "message": "You have started your journey", "source": "com.devcpu.oregantrail.start" }
+        ]
+      };
+    </script>
+  </head>  
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
