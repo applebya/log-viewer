@@ -5,9 +5,16 @@ import Fa from "react-fontawesome";
 import { getIconName, getIconColor, getRowClass, sortBy, formatTimestamp } from "./utils";
 
 const Tr = styled.tr.attrs({ className: p => getRowClass(p.type) })`
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;	
+	transition: color .15s ease;
+	color: #3c3c3c;
+
 	&:last-child {
 		border: none;
+	}
+	&:hover {
+		color: black;
+		border-bottom-color: #d2d2d2;
 	}
 `;
 
@@ -22,6 +29,14 @@ const Td = styled.td`
 	}
 	&:last-child {
 		padding-right: 0.5em;
+	}
+
+	@media (max-width: 991px) {
+		font-size: 13px;
+	}
+
+	@media (max-width: 991px) {
+		font-size: 12px;
 	}
 `;
 

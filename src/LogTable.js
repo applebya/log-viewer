@@ -12,6 +12,16 @@ const TableContainer = styled.div`
 	padding: 2em !important;
 	margin-top: 2em;
 	animation: ${fadeInUp} 1s ease;
+	overflow: scroll;
+
+	@media (max-width: 991px) {
+		padding: 15px 0 !important;
+	}
+
+	@media (max-width: 767px) {
+	  border-radius: 0px;
+	  padding: 1em 0 0 0 !important;
+	}
 `;
 
 const Table = styled.table`width: 100%;`;

@@ -12,7 +12,13 @@ const AppContainer = styled.div.attrs({
 })`
   display: flex;
   flex-direction: column;
-  padding: 2em 15px 4em;
+  padding: 2em 15px 4em;  
+
+  @media (max-width: 767px) {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 `;
 
 class App extends Component {

@@ -13,10 +13,19 @@ const AboutButton = styled.button.attrs({
 	background: none !important;
 	right: 0;
 	transition: background .15s ease;
-	margin-top: 12px;
+	margin-top: 14px;	
 
 	&:hover {
 		background: rgba(255,255,255,0.15) !important;
+	}
+
+	@media (max-width: 767px) {
+		margin-top: 2px !important;
+		margin-right: 5px;
+
+		aside {
+			display: none !important;			
+		}
 	}
 `;
 
@@ -25,13 +34,19 @@ const Title = styled.h1`
 	font-size: 3.5em;
 	text-align: center;
 	font-family: 'Monoton', Roboto, sans-serif;
+
+	@media (max-width: 767px) {
+		font-size: 2.5em;
+	}
 `;
 
 const Header = ({ infoIsVisible, toggleInfo }) =>
 	<HeaderContainer>
 		<AboutButton onClick={toggleInfo}>
-			{!infoIsVisible ? "About this page" : "Hide info"}
-			&nbsp;&nbsp;
+			<aside style={{ display: "inline" }}>
+				{!infoIsVisible ? "About" : "Hide info"}
+				&nbsp;&nbsp;
+			</aside>
 			<Fa name={!infoIsVisible ? "question-circle" : "times"} />
 		</AboutButton>
 		<Title>Log Viewer</Title>
