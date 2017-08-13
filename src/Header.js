@@ -13,7 +13,7 @@ const AboutButton = styled.button.attrs({
 	background: none !important;
 	right: 0;
 	transition: background .15s ease;
-	margin-top: 4px;
+	margin-top: 12px;
 
 	&:hover {
 		background: rgba(255,255,255,0.15) !important;
@@ -22,6 +22,7 @@ const AboutButton = styled.button.attrs({
 
 const Title = styled.h1`
 	color: white;
+	font-size: 3.5em;
 	text-align: center;
 	font-family: 'Monoton', Roboto, sans-serif;
 `;
